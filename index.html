@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mini Project Header Site Company</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header-section">
+                <div class="left-box">
+                    <img class="logo" src="img/logo.png" alt="Logo">
+                    <h3 class="title-logo">Name Company</h3>
+                </div>
+                <div class="menu-box">
+                    <ul>
+                        <li><a href="#" class="active">Dashboard</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Massages</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="right-box">
+                    <div class="grop-icon">
+                        <a href=""><i class="fa fa-search"></i></a>
+                        <a href=""><i class="fa fa-bell"></i></a>
+                        <a href=""><i class="fa fa-gear"></i></a>
+                    </div>
+                    <div class="profile-user">
+                        <div class="online-user">
+                            online
+                        </div>
+                        <div class="profile">
+                            <img class="img-profile" src="img/profile.png" alt="img profile">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box-mobile">
+                    <label for="checkbox-btn-menu" class="btn-menu">
+                        <i class="fa fa-navicon inavicon"></i>
+                        <i class="fa fa-close iclose" style="display: none;"></i>
+                    </label>
+                    <input type="checkbox" id="checkbox-btn-menu" hidden>
+                    <ul class="list-menu-mobile">
+                        <li><a href="#" class="active">Dashboard</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Massages</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
 </body>
 </html>

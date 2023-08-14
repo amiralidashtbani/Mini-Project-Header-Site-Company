@@ -1,0 +1,158 @@
+/* Main Code */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.container {
+    /* width: 1200px; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-section {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,0.2) ;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20% 45% 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.active {
+    background-image: linear-gradient(50deg ,#3ac2ff 50%, #2f56ff);
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+.right-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.grop-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.profile-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.online-user {
+    padding: 10px 20px;
+    color: #1f927f;
+    background-color: #edfdfa;
+    border-radius: 10px;
+}
+
+.img-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.right-box-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width:1210px) {
+    .title-logo {
+        font-size: 15px;
+    }
+
+    .menu-box {
+        font-size: 12px;
+    }
+
+    .online-user {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .img-profile {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width:1010px) {
+    .right-box-mobile {
+        display: inline;
+    }
+    
+    .menu-box {
+        display: none;
+    }
+
+    .header-section {
+        grid-template-columns: 30% 55% 5%;
+    }
+
+    .right-box {
+        justify-content: end;
+    }
+
+    .list-menu-mobile {
+        background-color: #fff;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        display: inline;
+        left: 0;
+        top: 0;
+        transform: translateX(-320px);
+        transition: all 0.5s;
+    }
+    
+    #checkbox-btn-menu:checked + .list-menu-mobile {
+        transform: translateX(0px);
+    }
+
+
+    .btn-menu:checked + .fa-close {
+        display: inline;
+    } 
+
+    .inavicon {
+        display: none;
+    }
+    
+}
