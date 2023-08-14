@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-    /* width: 1200px; */
     width: 90%;
     margin: 0 auto;
 }
@@ -44,15 +43,24 @@ ul {
     display: flex;
     gap: 30px;
     list-style-type: none;
+    justify-content: center;
 }
 
 a{
     text-decoration: none;
-}
+    transition: 0.5s;
+}   
 
 .active {
     background-image: linear-gradient(50deg ,#3ac2ff 50%, #2f56ff);
-    padding: 8px 15px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+li a:hover {
+    background-image: linear-gradient(50deg ,#3ac2ff 50%, #2f56ff);
+    padding: 8px 10px;
     border-radius: 20px;
     color: white;
 }
@@ -87,7 +95,7 @@ a{
     border-radius: 100px;
 }
 
-.right-box-mobile {
+.nav-icon-mobile {
     display: none;
 }
 
@@ -114,10 +122,6 @@ a{
 
 
 @media screen and (max-width:1010px) {
-    .right-box-mobile {
-        display: inline;
-    }
-    
     .menu-box {
         display: none;
     }
@@ -130,29 +134,13 @@ a{
         justify-content: end;
     }
 
-    .list-menu-mobile {
-        background-color: #fff;
-        width: 200px;
-        height: 100%;
-        position: fixed;
-        display: inline;
-        left: 0;
-        top: 0;
-        transform: translateX(-320px);
-        transition: all 0.5s;
+    .nav-icon-mobile {
+        display: block;
     }
-    
-    #checkbox-btn-menu:checked + .list-menu-mobile {
-        transform: translateX(0px);
-    }
+}
 
-
-    .btn-menu:checked + .fa-close {
-        display: inline;
-    } 
-
-    .inavicon {
+@media screen and (max-width:490px) {
+    .grop-icon {
         display: none;
     }
-    
 }
